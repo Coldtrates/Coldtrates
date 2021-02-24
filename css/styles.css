@@ -7,19 +7,18 @@
   color:#737373;
 }
 
+/* main site Nav */
+
 .mainnav li{
   display: inline-block;
   text-align: center;
   Margin: 8em;
-  border: none solid silver;
-  background-color: rgb(243, 235, 235);
+  nnbackground-color: none;
+  text-decoration: none;
 }
 
-.mainnav ul{
-text-align: center;
-  display: inline-block;
-}
 
+/* site Body */
 .body{
   text-align: center;
   background-color:#26272b;
@@ -38,6 +37,8 @@ text-align: center;
   color:#737373;
 }
 
+/* Bottom Page Nav */
+
 .footernav li{
   display: inline-block;
   text-align: center;
@@ -51,8 +52,10 @@ text-align: center;
   display: inline-block;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-color: lightblue;
+/* media querys */
+@media only screen and (min-width: 600px) {
+  .body{
+    width: 100%;
+
   }
-}
+  }
