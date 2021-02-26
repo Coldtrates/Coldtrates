@@ -13,47 +13,51 @@
 
 <header>
 
-    <div class="title">
+  <div class="title">
   <h1>Coldtrates</h1>
-    </div>
+  </div>
 
-     <!-- Google Translator Script I found that translates your page to any language I thought it was cool -->
+  <!-- Google Translator Script I found that translates your page to any language I thought it was cool -->
+    <div class="translator">
      <div id="google_translate_element"></div>
-     <script type="text/javascript">
-     function googleTranslateElementInit() {
-       new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
      }
      </script>
-     
-     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-     <body>
-       
-       <p class="text">Please Choose your language.</p>
-         </div>  
+    </div>
+     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>      
+       <p class="translator-text">Please Choose your language.</p>
+         </div>
+         
        <!-- End of Script -->
 
-  <div class="mainnav">
-    <ul class="">
+    <ul class="mainnav">
       <li><a href="https://www.facebook.com/adam.a.hickey/">Facebook</a></li>
       <li><a href="https://www.twitch.tv/coldtrates">Twitch</a></li>
       <li><a href="https://www.youtube.com/channel/UCqc7YrBncIVBNEvg2Tvrf2Q">Youtube</a></li>
       <li><a href="#">About Me</a></li>
       <li><a href="mailto:ahickey456@gmail.com">Email</a></li>
     </ul>
-  </div>
 
 </header>
 
 <body class="body">
-    <h2>Welcome to my website!</h2>
-    <p>This is just a personal website of things that have interested me and I have learned to do in my life.</p>
+<div class="welcome">
+  <h2>Welcome to my website!</h2>
+</div>
+
+<div class="intro">
+  <p>This is just a personal website of things that have interested me and I have learned to do in my life.</p>
+</div>
 
 <!-- had a idea that using <br/> is a good good tool for page spacing need to ask about this -->
-    <br /><br /><br /><br /><br />
 
-    <iframe width="420" height="315"
-src="https://www.youtube.com/watch?v=Jb-xyLyePaE&t=66s">
-</iframe>
+<!-- this is going to be a video gallery maybe -->
+<div class="videos">
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/Jb-xyLyePaE" frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
     <div class="about-me">
       <h2>About me</h2>
@@ -61,17 +65,29 @@ src="https://www.youtube.com/watch?v=Jb-xyLyePaE&t=66s">
         I have always been interested in computers since I have been a small child playing computer games with my grandmother and this interest has never stopped.<br />
          I never thought I would get into or have an interest in Coding but in reality I can see myself doing this for a living 
          and have been enjoying it so far <br /> I’m excited to see where this Coding Journey will take me. </p>
-
-         <br /><br /><br /><br /><br />
-
     </div>
+    
+<!-- had a idea that using <br/> is a good good tool for page spacing need to ask about this (bad  idea use css) -->
+
+
+<!-- this is going to be a text based game -->
+
+<!-- (not ready for the game yet)
+
+  <button id="play">Battle</button> 
+<button id="clear">Clear</button> 
+<button id="reset">Reset</button>
+
+<div class="text-game">
+<textarea id="output" cols="70" rows="25"></textarea>
+</div>
+--->
+
 </body>
 
 <!-- Site footer -->
 
-<footer class="site-footer">
-    <div class="container">
-      <div class="row">
+<footer>
         <div class="about"> 
           <h6>About</h6>
           <p class="text-justify">Coldtrates.com <i>Cold traited code  </i> The About discription goes here.</p>
@@ -91,10 +107,9 @@ src="https://www.youtube.com/watch?v=Jb-xyLyePaE&t=66s">
     
     </div>
 
-    <div class="container">
+    <div class="copyright">
           <p class="copyright-text">Copyright &copy; 2021
-             All Rights Reserved by 
-       <a href="#">Coldtrates</a>.
+             All Rights Reserved by <a href="#">Coldtrates</a>.
           </p>
     </div>
 </footer>

@@ -8,19 +8,31 @@
 }
 
 /* main site Nav */
+.no-underline {
+text-decoration: none;
 
+}
 .mainnav li{
   display: inline-block;
   text-align: center;
   Margin: 8em;
-  nnbackground-color: none;
-  text-decoration: none;
+  background-color: none;
 }
 
+.mainnav li a{
+text-decoration: none;
+color: #737373;
+
+}
+
+.mainnav li a:hover{
+  color: purple;
+  
+  }
 
 /* site Body */
+
 .body{
-  text-align: center;
   background-color:#26272b;
   padding:45px 0 20px;
   font-size:15px;
@@ -28,34 +40,81 @@
   color:#737373;
 }
 
-.site-footer
-{
-  background-color:#26272b;
-  padding:45px 0 20px;
-  font-size:15px;
-  line-height:24px;
-  color:#737373;
+.welcome{
+  text-align: center;
 }
+
+.intro{
+text-align: center;  
+}
+
+.videos{
+  text-align: center;
+}
+
+.about-me{
+  text-align: center;
+}
+
+
+
+/* translator google script */
+.translator{
+  text-align: center;
+  }
+  
+  .translator-text{
+  text-align: center;
+  }
+
+
+/* Text Game might be to hard for the js involved  */
+
+/*.text-game{
+display: inline-block;
+text-align: center;
+}
+
+#output {
+font: 16px Consolas;
+border: none;
+background: black;
+color: #737373;
+} */
 
 /* Bottom Page Nav */
 
-.footernav li{
-  display: inline-block;
-  text-align: center;
-  Margin: 8em;
-  border: none solid silver;
-  background-color: rgb(243, 235, 235);
-}
+  .footernav li{
+    background-color: none;
+    }
 
-.footernav ul{
-text-align: center;
-  display: inline-block;
+  .footernav li a{
+  text-decoration: none;
+  color: #737373;
+  }
+
+  .footernav li a:hover{
+    color: purple;
+  }
+
+
+/* footer */
+
+.copyright{
+  text-align: center;
+
 }
 
 /* media querys */
-@media only screen and (min-width: 600px) {
-  .body{
-    width: 100%;
 
+@media only screen and (max-width:800px){
+  
+  /* main site Nav */
+  
   }
-  }
+
+@media only screen and (max-width:1000px){
+
+/* main site Nav */
+
+    }
