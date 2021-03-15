@@ -1,9 +1,8 @@
 .title{
   text-align: center;
   background-color:#26272b;
-  padding:45px 0 20px;
-  font-size:15px;
-  line-height:24px;
+  padding:1% 1%;
+  font: bold 100%;
   color:#737373;
 }
 
@@ -13,9 +12,6 @@ text-decoration: none;
 
 }
 .mainnav li{
-  display: inline-block;
-  text-align: center;
-  Margin: 8em;
   background-color: none;
 }
 
@@ -30,6 +26,11 @@ color: #737373;
   
   }
 
+  .welcome {
+    padding: 2%;
+
+  }
+
 /* site Body */
 
 .body{
@@ -40,27 +41,10 @@ color: #737373;
   color:#737373;
 }
 
-.welcome{
-  text-align: center;
-}
-
-.intro{
-text-align: center;  
-}
-
-.videos{
-  text-align: center;
-}
-
-.about-me{
-  text-align: center;
-}
-
-
-
 /* translator google script */
 .translator{
   text-align: center;
+  padding: 2%;
   }
   
   .translator-text{
@@ -104,6 +88,38 @@ color: #737373;
   text-align: center;
 
 }
+
+/* flexboxes */
+
+  /* main site Nav */
+    .mainnav{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .welcome{
+      text-align: center;
+    }
+    
+    .intro{
+    text-align: center;  
+    }
+    
+    .videos{
+      text-align: center;
+    }
+    
+    .about-me{
+      text-align: center;
+    }
+
+  /* Bottom Page Nav */
+    .footernav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
 
 /* media querys */
 
