@@ -54,7 +54,7 @@ color: #737373;
 
 /* Text Game might be to hard for the js involved  */
 
-/*.text-game{
+.text-game{
 display: inline-block;
 text-align: center;
 }
@@ -64,7 +64,7 @@ font: 16px Consolas;
 border: none;
 background: black;
 color: #737373;
-} */
+} 
 
 /* Bottom Page Nav */
 
@@ -124,13 +124,22 @@ color: #737373;
 /* media querys */
 
 @media only screen and (max-width:800px){
-  
-  /* main site Nav */
-  
+  section{
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  }
+      
   }
 
-@media only screen and (max-width:1000px){
+@media only screen and (max-width:1080px){
+  section{
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 
-/* main site Nav */
+  }
 
     }
