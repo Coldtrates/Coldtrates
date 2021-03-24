@@ -3,6 +3,9 @@
 This is a personal website that I would like to use as a Resume refrence. Some learning experiences personal, information, and interests of mine.
 
 
+
+Some of the features I wanted to incoperate was a hidden link Menu and Choice base game that had diffrent pictures and results.
+
 --- Css Features ---
 A navigation menu that expands and collapses properly at desktop and mobile sizes, such as by switching between vertical and horizontal styles, or is opened and closed by clicking the “hamburger” icon
 
@@ -12,3 +15,4 @@ Use Flexbox or CSS Grid to organize content areas based on mobile or desktop vie
 
 Create a JavaScript function that performs some form of mathematical operation (calculates something) and displays the result on your page or otherwise uses that value to do something on the site.
 
+I am also working on another game that is Text based that would include stats monsters experiance and rewards has been commented out till further notice

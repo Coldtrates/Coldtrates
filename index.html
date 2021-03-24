@@ -6,7 +6,7 @@
 
 <!-- Linked Files section -->
 <link rel="stylesheet" href="css/styles.css">
-<script src="js/menu.js"></script>
+
     
 <!-- title -->
 <title>Coldtrates.com</title>
@@ -18,30 +18,41 @@
   <h1>Coldtrates</h1>
   </div>
 
-  <!-- Google Translator Script I found that translates your page to any language I thought it was cool -->
-    <div class="translator">
-     <div id="google_translate_element"></div>
-      <script type="text/javascript">
-        function googleTranslateElementInit() {
-          new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
-     }
-     </script>
-    </div>
-     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>      
-       <p class="translator-text">Please Choose your language.</p>
-         </div>
-         
-       <!-- End of Script -->
+<!-- navigation Menu -->
+    <nav role="navigation">
+    <div id="menuToggle">    
+    <input type="checkbox" />
 
-    <ul class="mainnav">
+    <span></span>
+    <span></span>
+    <span></span>  
+    <h1>Links</h1>
+
+    <ul id="menu">
       <li><a href="https://www.facebook.com/adam.a.hickey/">Facebook</a></li>
       <li><a href="https://www.twitch.tv/coldtrates">Twitch</a></li>
       <li><a href="https://www.youtube.com/channel/UCqc7YrBncIVBNEvg2Tvrf2Q">Youtube</a></li>
       <li><a href="#">About Me</a></li>
-      <li><a href="mailto:ahickey456@gmail.com">Email</a></li>
+      <li><a href="mailto:ahickey456@gmail.com">Email</a></li>     
     </ul>
-
+    </div>
+</nav>
 </header>
+
+ <!-- Google Translator Script I found that translates your page to any language I thought it was cool -->
+ <div class="translator">
+  <div id="google_translate_element"></div>
+   <script type="text/javascript">
+     function googleTranslateElementInit() {
+       new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+  }
+  </script>
+ </div>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>      
+    <p class="translator-text">Please Choose your language.</p>
+      </div>
+      
+    <!-- End of Script -->
 
 <body class="body">
 <div class="welcome">
@@ -67,22 +78,40 @@ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pic
          and have been enjoying it so far <br /> I’m excited to see where this Coding Journey will take me. </p>
     </div>
     
+
+    <!-- Choice game -->
+  <div class="choice-game">
+    <p>Please try this Choice base game. </p>
+    <div id="images">
+      
+    </div>
+    <div id="text">
+    </div>
+
+    <input id="input" 
+      onkeydown='submitName(this)' 
+      placeholder='Type Your Name and Enter to Begin'>
+    <div id="buttonBox">
+    </div>
+  </div>
+
 <!-- had a idea that using <br/> is a good good tool for page spacing need to ask about this (bad  idea use css flexboxes) -->
 
 
 <!-- this is going to be a text based game -->
 
-<!-- (not ready for the game yet) -->
+<!-- (not ready for the game yet) 
 <p>One of My first Memorys is </p>
 <button id="play">Battle</button> 
 <button id="clear">Clear</button> 
 <button id="reset">Reset</button>
 
-<div class="text-game">
+ <div class="text-game"> 
 <textarea id="output" cols="70" rows="25"></textarea>
-</div>
+</div> -->
 
-</body>
+
+
 
 <!-- Site footer -->
 
@@ -112,5 +141,10 @@ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; pic
           </p>
     </div>
 </footer>
+
+
+<!-- had a issue where javascript was loading before the rest of the page learned to place javascrip in the bottom for the furture -->
+<script src="js/menu.js"></script>
+</body>
 
 </html>
